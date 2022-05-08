@@ -1,7 +1,11 @@
 WORK FLOW 
+![mm](https://user-images.githubusercontent.com/94218410/167286887-ed3e4edb-c06f-4aa1-9c2d-9109467a8d8e.jpg)
 
 
 IMAGE PROCESSING 
+![dd](https://user-images.githubusercontent.com/94218410/167286925-e7fe5e3f-b40a-45c6-9126-21d258690fbe.png)
+
+
 •	Using OpenCV, Image processing of a leaf from the plant is done.
 •	If the leaf is a full green leaf, it is said to be healthy and sector is shown in green.
 •	If the leaf is yellow, the plant has irrigation problems and sector is shown in orange.
@@ -13,7 +17,9 @@ IMAGE PROCESSING
 
 
 OPTIMUM MOISTURE CALCULATION
- 
+
+ ![ddd](https://user-images.githubusercontent.com/94218410/167286916-934664b9-d271-409f-bf1f-f40b2979c6ec.jpg)
+
 •	Using a sensor, the moisture in the soil is recorded at that particular temperature and humidity.
 •	Optimum value of moisture of the soil at that particular temperature and humidity is calculated for a specific plant 
 •	Found by storing, monitoring and processing the data from all the previous readings of the plant.
