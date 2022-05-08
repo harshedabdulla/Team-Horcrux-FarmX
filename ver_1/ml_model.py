@@ -19,7 +19,7 @@ def build_model():
             tf.keras.layers.GlobalAveragePooling2D(),
             tf.keras.layers.Dense(64, activation="relu"),
             tf.keras.layers.Dense(64, activation="relu"),
-            tf.keras.layers.Dense(3, activation="softmax"),
+            tf.keras.layers.Dense(2, activation="softmax"),
         ]
     )
     return model

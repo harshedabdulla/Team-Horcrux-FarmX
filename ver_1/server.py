@@ -32,19 +32,18 @@ async def handle_form(file_uploaded: UploadFile=File(UploadFile)):
     img = Image.open(io.BytesIO(image))
     img.save("image.jpg", 'jpeg')
     
-    # my_model = mml.build_model()
-    # mml.train(my_model, "./rice_leaf_diseases") # dataset location
-    # my_model.save("trained_model.h5")
+    #  my_model = mml.build_model()
+    #  mml.train(my_model, "./yield") # dataset location
+    #  my_model.save("trained_model.h5")
 
     my_model = tf.keras.models.load_model("trained_model.h5")
     pred = int(mml.test(my_model, "image.jpg")) # test image location
     res = ""
     if pred == 0:
-        res = "bacterial"
-    elif pred == 1:
-        res = "brown spot"
-    else:
-        res = "lead smut"
+        res = "good yield"
+    
+    else :
+        res = "bad yield"
     return {
         "identified as:": res 
     }
