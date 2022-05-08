@@ -1,5 +1,6 @@
 WORK FLOW 
 
+
 IMAGE PROCESSING 
 •	Using OpenCV, Image processing of a leaf from the plant is done.
 •	If the leaf is a full green leaf, it is said to be healthy and sector is shown in green.
